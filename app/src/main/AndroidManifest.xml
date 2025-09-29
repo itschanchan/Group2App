@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group2App">
         <activity
+            android:name=".PhotoGallery"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

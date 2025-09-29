@@ -1,6 +1,7 @@
 package com.ciit.group2app
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
@@ -145,7 +146,15 @@ class MainActivity : AppCompatActivity() {
                 val selectedDate = dateFormat.format(calendar.time)
 
                 showSuccessToast()
-                showDialogBox(getFirstName, getLastName, getEmail, getUsername, getPassword, getGender, selectedDate)
+
+                // showDialogBox(getFirstName, getLastName, getEmail, getUsername, getPassword, getGender, selectedDate)
+
+                // It will go to the PhotoGallery Activity
+                val intent = Intent(this, PhotoGallery::class.java)
+                intent.putExtra("email", email.text.toString())
+                intent.putExtra("pass", password.text.toString())
+                startActivity(intent)
+
             }
         }
     }
