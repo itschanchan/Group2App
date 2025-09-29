@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Group2App</string>
+    <string name="gallery_header">Group 2 Gallery</string>
+    <string name="silksong_image_description">Silksong game art</string>
 </resources>
