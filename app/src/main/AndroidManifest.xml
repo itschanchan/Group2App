@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group2App">
         <activity
+            android:name=".Page6"
+            android:exported="false" />
+        <activity
+            android:name=".Page5"
+            android:exported="false" />
+        <activity
+            android:name=".Page4"
+            android:exported="false" />
+        <activity
+            android:name=".Page3"
+            android:exported="false" />
+        <activity
+            android:name=".Page2"
+            android:exported="false" />
+        <activity
+            android:name=".Page1"
+            android:exported="false" />
+        <activity
             android:name=".PhotoGallery"
             android:exported="false" />
         <activity
