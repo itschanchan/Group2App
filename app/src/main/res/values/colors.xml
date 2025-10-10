@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="darkPurple">#852476</color>
+    <color name="brightPurple">#BF40BF</color>
+    <color name="amaranth">#9F2B68</color>
+
+
+
 </resources>
