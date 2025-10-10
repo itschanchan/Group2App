@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Group2App">
         <activity
+            android:name=".Brand1"
+            android:exported="false" />
+        <activity
+            android:name=".OrderingSystem"
+            android:exported="false"
+            android:label="@string/title_activity_ordering_system"
+            android:theme="@style/Theme.Group2App.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -20,6 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LoginPage"
+            android:exported="true" />
         <activity
             android:name=".Page6"
             android:exported="false" />

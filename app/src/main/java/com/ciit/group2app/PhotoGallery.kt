@@ -90,7 +90,7 @@ class PhotoGallery : AppCompatActivity() {
 
         // LOGOUT
         logoutButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginPage::class.java)
             startActivity(intent)
         }
 
@@ -137,6 +137,12 @@ class PhotoGallery : AppCompatActivity() {
 
             }
         }
+
+        // Back to Main Menu
+        val back = findViewById<Button>(R.id.backButton)
+        back.setOnClickListener {
+            finish()
+        }
     }
 
     // Counts the no. of images clicked and it will appear in the progress bar.
@@ -146,7 +152,11 @@ class PhotoGallery : AppCompatActivity() {
             progressBar.progress = currentProgress
             // Nested if that will show a toast if all images are clicked.
             if (currentProgress == progressBar.max) {
-                Toast.makeText(this, "Congratulations! You clicked all the images! ╰(▔∀▔)╯", Toast.LENGTH_LONG).show()
+                Toast.makeText(
+                    this,
+                    "Congratulations! You clicked all the images! ╰(▔∀▔)╯",
+                    Toast.LENGTH_LONG
+                ).show()
             }
         }
     }

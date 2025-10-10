@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderingSystem">
+
+    <TextView
+        android:id="@+id/tvShopHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Group 2's Otaku Shop"
+        android:textSize="25dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="it's more than just an ordinary otaku"
+        android:textStyle="italic"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShopHeader" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="374dp"
+        android:layout_height="433dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTagline">
+
+        <ImageView
+            android:id="@+id/gundam_witch_from_mercury_logo"
+            android:layout_width="137dp"
+            android:layout_height="120dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/gundam_witch_from_mercury_logo" />
+
+        <TextView
+            android:id="@+id/tvSelectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select a store:"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to\nMain Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout2"
+        app:layout_constraintVertical_bias="0.495" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -142,7 +142,7 @@
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="69dp"
-        android:layout_height="39dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="28dp"
         android:checked="true"
         android:text="ToggleButton"
@@ -164,4 +164,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="Back to\nMain Menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toEndOf="@+id/logoutButton"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
