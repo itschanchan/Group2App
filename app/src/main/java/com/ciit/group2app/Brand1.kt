@@ -20,6 +20,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class Brand1 : AppCompatActivity() {
     // Initialized Variables
+
     private lateinit var sulettaChkBx: CheckBox
     private lateinit var miorineChkBx: CheckBox
     private lateinit var aerialChkBx: CheckBox
